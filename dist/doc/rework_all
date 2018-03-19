@@ -1,0 +1,20 @@
+// Rework
+
+all.project
+-----------------------------------
+rss?
+
+refactor all css using new conventions
+	-> base
+	-> layout
+	-> module
+	-> state
+
+all one file for now, with comment dividers
+-----------------------------------
+
+clean up and check formatting on finished html
+
+-----------------------------------
+
+gather information on css and semantic markup

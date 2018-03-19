@@ -1,0 +1,23 @@
+// Rework
+
+HOME
+
+home.html
+-------------------------------------
+div class recent_art
+add lightbox link for each image
+-------------------------------------
+
+index.css
+------------------------------------
+.menu nav is 5 to 10px to the right. why?
+
+media queries
+change 700-960 lit area to fullscreen version
+
+fix lit area for handheld
+
+check nav for home, gallery on handheld and tweak
+
+2nd pass on responsive design of media queries
+------------------------------------

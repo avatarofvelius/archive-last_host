@@ -1,0 +1,465 @@
+
+body {
+	background-color: #333333;
+	text-align: center;
+	overflow: none;
+	color: #FFFFFF;
+ }
+
+#document {
+    height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+	margin: auto;
+	overflow: auto;
+}
+
+li {
+	 padding-left: 40px;
+}
+
+.menu {
+width:100%;
+	 background-color:#282828;
+	 padding:0;
+}
+
+.menu a{
+	float: none;
+	list-style: none;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	margin: -40px;
+	text-decoration: none;
+}
+
+.menu ul  {
+	margin-top: 10px;
+	width: 24.5%;
+	float: left;
+	text-decoration: none;
+	list-style: none;
+
+}
+
+.menu li {
+	width: 80%;
+	float: left;
+}
+
+.menu h3 {
+	  color: #FFFFFF;
+	  border-bottom: 2px solid #00AA00;
+}
+
+nav li {
+	float: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+nav a {
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #282828;
+}
+
+nav a:hover {
+	  color: #00AA00;
+}
+
+.active {
+	  color: #FFFFFF;
+	  border-bottom: 1px solid #00CC00;
+}
+
+#home_article {
+	float: left;
+	height: 450px;
+	width: 47.75%;
+	margin: 0% 1%;
+	padding: 25px 0px;
+	background-color: #222222;
+}
+
+#p_datetime {
+	width: 75%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px 15px;
+	background-color: #282828;
+	border: 1px solid #181818;
+}
+
+#p_article {
+	width: 75%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 25px 15px;
+	background-color: #222222;
+	border: 1px solid #222222;
+}
+
+#home_article a {
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+
+#home_article a:hover {
+	  color: #00AA00;
+}
+
+.about {
+	background-color: #222222;
+	width: 100%;
+	float:right;
+	height: 300px;
+	border-top: 1px solid #111111;
+}
+
+#footer a {
+	margin-right: 10px;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+@media (max-width: 700px)
+{
+
+	.menu {
+	height:625px;
+	display:block;
+	float: none;
+	}
+
+	.menu ul {
+	display:block;
+	width:100%;
+	height: 200px;
+	float: none;
+	margin: 5px 0px;
+	text-align: center;
+	border-top: 2px solid #00CC00;
+	}
+
+	.menu li {
+		margin-top: 7.5px;
+		width: 95%;
+		margin-left: -10px;
+	}
+
+	.menu a {
+		padding: 0px;
+		float: none;
+		text-align: center;
+	}
+
+#pager {
+	display: none;
+}
+#logo {
+	display: none;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+#book {
+	height: auto;
+}
+
+#book_desc {
+	float: right;
+	width: 65%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 2.5%;
+}
+
+#book a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+#book_img {
+	float: none;
+	width: 100%;
+	padding-top: 25px;
+}
+
+#book_desc {
+	float: none;
+	width: 80%;
+	margin: auto;
+	padding: 25px 0px;
+}
+
+.recent_art {
+	height:1150px;
+	margin-top: 20px;
+}
+
+.recent_art img {
+	height: 20%;
+	margin: 1% 1%;
+	border: 2px double #00CC00;
+}
+
+.recent_art a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+
+.recent_art a:hover {
+	  color: #00AA00;
+}
+
+}
+
+@media (min-width: 960px){
+
+/* align logo to the center of nav */
+
+.menu {
+	height:200px;
+}
+
+#pager {
+	width: 977px;
+}
+
+body {
+	width: 960px;
+	margin: auto;
+	background: #222222;
+	border-left: 1px solid #111111;
+	border-right: 1px solid #111111;
+}
+
+#book {
+	background: #282828;
+	height: 300px;
+	width: 100%;
+	border-bottom: 1px solid #00CC00;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+#book_img {
+	float: left;
+	width: 15%;
+	margin-top: 5%;
+	margin-left: 7.5%;
+}
+
+#book_desc {
+	float: right;
+	width: 65%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 2.5%;
+}
+
+#book a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+
+#book a:hover {
+	  color: #00AA00;
+}
+
+.recent_art {
+	height:300px;
+	margin-top: 0px;
+	padding-top: 25px;
+}
+
+.recent_art img {
+	height: 60%;
+	margin: 4% 1%;
+	border: 0px double #383838;
+}
+
+.recent_art img:hover {
+	height: 60%;
+	margin: 4% 1%;
+	outline: 5px double #00CC00;
+}
+
+#img_link{
+	padding-bottom: 0px;
+	text-decoration: none;
+	border-bottom: 0px solid #00CC00;
+}
+
+
+.recent_art a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+
+.recent_art a:hover {
+	  color: #00AA00;
+}
+
+}
+
+
+
+@media (min-width: 700px) and (max-width: 960px){
+
+#content_book {
+	height:2000px;
+}
+
+#pager {
+	display: none;
+}
+#logo {
+	display: none;
+}
+.menu {
+	height:250px;
+	background-color: #282828;
+}
+
+.menu ul {
+	width: 30%;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+#book {
+	height: 625;
+}
+
+#book_desc {
+	float: right;
+	width: 65%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 2.5%;
+}
+
+#book a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+#book_img {
+	float: none;
+	width: 100%;
+	padding-top: 25px;
+}
+
+#book_desc {
+	float: none;
+	width: 80%;
+	margin: auto;
+	padding: 25px 0px;
+}
+
+.recent_art {
+	height: 550px;
+	margin-top: 20px;
+}
+
+.recent_art img {
+	height: 35%;
+	margin: 1% 1%;
+	border: 2px double #00CC00;
+}
+
+.recent_art a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+
+.recent_art a:hover {
+	  color: #00AA00;
+}
+
+}
+
+/* make this work */
+@media screen and (min-resolution: 300dpi) {
+
+#book {
+	height: auto;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+#book_desc {
+	float: right;
+	width: 65%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 2.5%;
+}
+
+#book a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+#book_img {
+	float: none;
+	width: 100%;
+	padding-top: 25px;
+}
+
+#book_desc {
+	float: none;
+	width: 80%;
+	margin: auto;
+	padding: 25px 0px;
+}
+
+.recent_art {
+	height:1200px;
+	margin-top: 20px;
+}
+
+.recent_art img {
+	height: 20%;
+	margin: 1% 1%;
+	border: 2px double #00CC00;
+}
+
+.recent_art a{
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #00CC00;
+}
+
+.recent_art a:hover {
+	  color: #00AA00;
+}
+
+}

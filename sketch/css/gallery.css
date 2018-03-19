@@ -1,0 +1,254 @@
+
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+a{
+	color: #333333;
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background: #383838;
+	min-height: 55px;
+	color: #FFFFFF;
+	margin: auto;
+	overflow: auto;
+}
+
+header a {
+	color: #FFFFFF;
+}
+
+nav {
+	float: right;
+	width: 85%;
+
+}
+
+nav ul {
+	float: right;
+	margin-right: 25px;
+}
+
+.subnav {
+	float: left;
+}
+
+.subnav li {
+	list-style: none;
+}
+
+.subnav a:hover {
+	color: #00CC00;
+}
+
+nav li {
+	float: left;
+	list-style: none;
+	padding: 0 10px;
+}
+
+nav a {
+	color: #FFFFFF;
+	padding-bottom: 5px;
+}
+
+nav a:hover {
+	  color: #CC0000;
+	  border-bottom: 2px solid #000000;
+}
+
+nav li.current a {
+	  color: #CC0000;
+	  border-bottom: 2px solid #000000;
+}
+
+section {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.tagline {
+	background: #222222;
+	color: #FFFFFF;
+	outline: #000000 solid 1px;
+}
+
+.tagline h1 {
+	text-align: center;
+	font-size: 35px;
+}
+
+#gallery {
+	align: center
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+#gallery li {
+	display: block;
+	float: left;
+	width: 23%;
+	curser: pointer;
+	margin: 0 1% 1% 1%;
+	position: relative;
+}
+
+#gallery img {
+	width: 100%;
+	height: 100%;
+	outline: 1px solid #000000;
+}
+
+.overlay {
+	display: none;
+	background: #555555;
+	color: #FFFFFF;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 97%;
+	pointer-events: none;
+}
+
+.overlay h3 {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 800px){
+	nav {
+		float: none;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	nav ul {
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	#gallery {
+		margin-left: 11px;
+	}
+
+	#gallery li {
+		width: 46%;
+	}
+
+	.subnav {
+		float: none;
+		width: 95%;
+		text-align: center;
+		margin-left: 5px;
+	}
+
+	.subnav a {
+		margin-left: 5px;
+	}
+}
+
+@media (max-width: 640px) {
+
+	#gallery {
+		margin-left: 8px;
+	}
+	#gallery li {
+		width: 46%;
+	}
+	.overlay {
+
+		height: 98%;
+	}
+	.subnav {
+		width: 96.5%;
+		margin: 0;
+	}
+
+	.subnav a {
+		margin-left: -10px;
+	}
+}
+
+@media screen and (min-resolution: 300dpi) {
+
+	h1 {
+		font-size: 48px;
+	}
+
+	a {
+		font-size: 36px;
+	}
+
+	#gallery {
+		margin-left: 8px;
+	}
+	#gallery li {
+		width: 95%;
+	}
+	.overlay {
+
+	height: 98%;
+	}
+	nav {
+		float: none;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	nav ul {
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	#gallery {
+		margin-left: 11px;
+	}
+
+	#gallery li {
+		width: 95%;
+	}
+
+	.subnav {
+		float: none;
+		width: 95%;
+		text-align: center;
+		margin-left: 5px;
+	}
+
+	.subnav a {
+		margin-left: 5px;
+	}
+
+}

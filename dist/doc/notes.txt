@@ -1,0 +1,8 @@
+// Notes
+
+footer image
+<!--background-image: url('img/652.png'); background-size: 100% 100%;
+background-position:left;background-repeat: no-repeat;
+
+.overlay image
+url(../img/overlay.jpg) no-repeat top center;

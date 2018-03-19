@@ -1,0 +1,31 @@
+// Rework
+
+Gallery
+
+redesign overlay / wireframe alternatives
+
+gallery.css
+------------------------------------
+see if box-sizing: border-box is supported everywhere
+if so replace borders with that?
+
+disable lightbox on handheld
+
+check media queries
+
+check handheld version
+------------------------------------
+
+gallery.html
+-------------------------------------
+figure out how to dynamically add story and character divs to the bootom of the page.
+
+<!-- hidden page content that displays book information and character biographies -->
+<div style="display: none; background-color: #222222; width:100%; height: 400px;">
+
+</div>
+
+<div style="display: none; background-color: #383838; width:100%; height: 250px; outline: #000000 solid 1px;">
+
+</div>
+-------------------------------------

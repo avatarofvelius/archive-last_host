@@ -1,0 +1,369 @@
+
+	 <!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+	<title>Rei AoV Conceptual</title>
+	<link rel="stylesheet" media="screen" href="css/index.css" />
+
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/cycle2.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0;">
+
+	<meta charset="utf-8">
+	<meta name="description" content="An Inari Works Conceptual Web Portal, by Avatar of Velius">
+	<meta name="author" content="Matt T. Myers">
+
+	<style type="text/css">
+
+	body {
+	 text-align: center;
+	 height: 100%;
+	 line-height: 1.5;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	#container {
+		width: 100%;
+		height: 450px;
+		overflow: hidden;
+		background: #222222;
+	}
+
+	#slideshow {
+		height: 100%;
+		width: 100%;
+	}
+
+	#slideshow img {
+		height: 100%;
+		width: 100%;
+	}
+
+	#pager {
+		margin-left: -8px; /* pixel perfect */
+		text-align: center;
+		height:120px;
+		position: absolute;
+		margin-top: -140px;
+		background: rgba(0,0,0,.5);
+		z-index: 1000;
+		opacity: 0;
+		transform: all 0.3s ease-in-out 0s;
+	}
+
+	#pager:hover {
+		opacity: 1;
+	}
+
+	#prev {
+		height: 80px;
+		widrh: 80px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto 10px;
+		z-index: 1000;
+	}
+	#next {
+		height: 80px;
+		widrh: 80px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		right: 0;
+		margin: auto 10px;
+		z-index: 1000;
+	}
+
+	#pager img {
+		margin: 10px 5px 10px 5px;
+		opacity: 0.3;
+		transition:all .3s ease-in-out 0s;
+	}
+
+	#pager img:hover {
+		opacity: 1;
+		transform:scale(1.05);
+		z-index: 100;
+	}
+	</style>
+
+
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+        $('#shownav #me').click(function() {
+                $('.about').slideToggle("fast");
+				$('#me').toggleClass('active');
+        });
+
+				$('#shownav #nav').click(function() {
+                $('.menu').slideToggle("fast");
+				$('#nav').toggleClass('active');
+        });
+    });
+	</script>
+	</head>
+
+    <body>
+
+	<header style="width:100%;min-height: 55px; background-color:#383838;">
+
+		<nav id="shownav" style=" padding-top: 15px;margin-bottom: 45px;">
+			<ul>
+			<li style="width:15%;float: left;">
+			<a id="nav" href="#">Navigation</a>
+			</li>
+			<ul>
+
+			<li style="width:15%;float:right;margin-right:35px;padding: 0px;">
+			<a id="me" href="#">About Me</a>
+			</li>
+
+			<li style="width:15%;float:right;margin-right:0px;padding: 0px;">
+			<a href="#">Wattpad</a>
+			</li>
+
+			<li style="width:15%;float:right;margin-right:0px;">
+			<a href="../download.php">Downloads</a>
+			</li>
+
+			</ul>
+		</nav>
+
+		<div class="menu" style="display:none; ">
+		<ul>
+			<h3>Inari Works Conceptual</h3>
+			<li><a  href="../book/index.html">Online Library</a></li>
+			<li><a  href="../sketch/gallery.html">Art Gallery</a></li>
+			<li><a  href="#">Concept Wiki</a></li>
+			<li><a  href="#">View Wattpad</a></li>
+			<li><a  href="#">Concept Blog</a></li>
+		</ul>
+
+		<ul>
+			<h3>Current Writing Projects</h3>
+			<li><a  href="#">Advent of Arcs & Angels</a></li>
+			<li><a  href="#">Sore wa Kurokku Kohai</a></li>
+			<li><a  href="#">Collective Existence</a></li>
+			<li><a  href="#">Konojo no Neon</a></li>
+			<li><a  href="#">Hikari no Tenshi</a></li>
+			<li><a  href="#">Tamashi no Ido</a></li>
+		</ul>
+
+		<ul>
+			<h3>Application Development</h3>
+			<li><a  href="#">Application Portal</a></li>
+			<li><a  href="#">PDF & Epub Generation</a></li>
+			<li><a  href="#">Worldbuilder Timeline</a></li>
+			<li><a  href="#">Web Visual Novel</a></li>
+		</ul>
+
+		<ul id="logo" style="float:justify;">
+			<li><a  href="#"><img src="img/banner_clean.png" style="margin-top: 5px;"/></a></li>
+		</ul>
+
+		</div>
+
+		<div class="about" style="display:none;">
+			<h2>About Me </h2>
+		</div>
+
+	</header>
+
+		<div id="container">
+				<!--  fade, fadeout, none, and scrollHorz -->
+
+			<div id="slideshow" class="cycle-slideshow"
+				data-cycle-fx = "scrollHorz"
+				data-cycle-speed = "800"
+				data-cycle-timeout = "3000"
+				data-cycle-pager = "#pager"
+				data-cycle-pager-template = "<a href='#'><img src='{{src}}' height=100 width=150 />"
+				data-cycle-next = "#next"
+				data-cycle-prev = "#prev"
+				data-cycle-manual-fx = "scrollHorz"
+				data-cycle-manual-speed = "400"
+				data-cycle-pager-fx = "fadeout">
+
+				<img src="img/1.png" alt="">
+				<img src="img/2.png" alt="">
+				<img src="img/3.png" alt="">
+				<img src="img/4.png" alt="">
+				<img src="img/5.png" alt="">
+			</div>
+
+			<div id="pager"></div>
+			<!--
+		<img id="prev" src="img/prev2.png"/>
+		<img id="next" src="img/next2.png"/>
+			-->
+
+		</div>
+
+
+		<div id="content_book" style="width:100%; background-color:#282828;">
+
+		<div id="book">
+			<div id="book_img">
+				<img src="img/cover/book_1.png"></img>
+			</div>
+			<div id="book_desc">
+				<h2><a id="nav" href="#">Tamashi no Ido</a></h2>
+				<p>
+					Tamashi no Ido is a novela based before my beginning work in this concept (series), Advent of Arcs and Angels.
+					While it is not first cronologicaly I believe it's going to be a good primer for the overall story and understanding the nuances of the way the world is unique, though it can be relatable to a very near future as it is.
+					It should range around 2,000 to 4,500 words, depending on how many elements seem fleshed out and understandable.
+				</p>
+
+				<p style="margin-top: 10px;">
+					<a id="nav" href="#">Web</a>  &nbsp; . &nbsp;
+					<a id="nav" href="#">Wattpad</a>  &nbsp; . &nbsp;
+					<a id="nav" href="#">Pdf</a>  &nbsp; . &nbsp;
+					<a id="nav" href="#">Epub</a>
+				</p>
+			</div>
+
+		</div>
+
+
+		<div id="book">
+			<div id="book_img">
+				<img src="img/cover/book_1.png"></img>
+			</div>
+			<div id="book_desc">
+				<h2><a id="nav" href="#">Hikari no Tenshi</a></h2>
+				<p>
+					Tamashi no Ido is a novela based before my beginning work in this concept (series), Advent of Arcs and Angels.
+					While it is not first cronologicaly I believe it's going to be a good primer for the overall story and understanding the nuances of the way the world is unique, though it can be relatable to a very near future as it is.
+					It should range around 2,000 to 4,500 words, depending on how many elements seem fleshed out and understandable.
+				</p>
+
+			<p style="margin-top: 10px;">
+				<a id="nav" href="#">Web</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Wattpad</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Pdf</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Epub</a>
+			</p>
+			</div>
+		</div>
+
+		<div id="book">
+			<div id="book_img">
+				<img src="img/cover/book_1.png"></img>
+			</div>
+			<div id="book_desc">
+				<h2><a id="nav" href="#">Sore wa Kurokku Kohai</a></h2>
+				<p>
+					Tamashi no Ido is a novela based before my beginning work in this concept (series), Advent of Arcs and Angels.
+					While it is not first cronologicaly I believe it's going to be a good primer for the overall story and understanding the nuances of the way the world is unique, though it can be relatable to a very near future as it is.
+					It should range around 2,000 to 4,500 words, depending on how many elements seem fleshed out and understandable.
+				</p>
+
+			<p style="margin-top: 10px;">
+				<a id="nav" href="#">Web</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Wattpad</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Pdf</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Epub</a>
+			</p>
+			</div>
+		</div>
+
+		<div id="book">
+			<div id="book_img">
+				<img src="img/cover/book_1.png"></img>
+			</div>
+			<div id="book_desc">
+				<h2><a id="nav" href="#">Advent of Arcs and Angels</a></h2>
+				<p>
+					Tamashi no Ido is a novela based before my beginning work in this concept (series), Advent of Arcs and Angels.
+					While it is not first cronologicaly I believe it's going to be a good primer for the overall story and understanding the nuances of the way the world is unique, though it can be relatable to a very near future as it is.
+					It should range around 2,000 to 4,500 words, depending on how many elements seem fleshed out and understandable.
+				</p>
+
+			<p style="margin-top: 10px;">
+				<a id="nav" href="#">Web</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Wattpad</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Pdf</a>  &nbsp; . &nbsp;
+				<a id="nav" href="#">Epub</a>
+			</p>
+			</div>
+		</div>
+
+
+
+		<div class="recent_art" id="content" style=" width:100%; background-color:#222222;">
+
+			<a id="img_link" href="../sketch/image/large/1.png"><img src="../sketch/image/large/1.png"></a>
+			<a id="img_link" href="../sketch/image/large/2.png"><img src="../sketch/image/large/2.png"></a>
+			<a id="img_link" href="../sketch/image/large/3.png"><img src="../sketch/image/large/3.png"></a>
+			<a id="img_link" href="../sketch/image/large/g.png"><img src="../sketch/image/large/g.png"></a>
+
+			<h2><a href="../sketch/gallery.html">View Gallery</a></h2>
+
+		</div>
+
+		<div class="blog" id="content" style="height:1000px; width:100%; background-color:#222222;">
+
+			<div id="home_article">
+				<h1><a href="../blog/viewpost.php?id=1">Article Title</a></h1>
+				<h4>This is the Description</h4>
+				<p id="p_datetime">Posted on : 1984, May, 22 2:22</p>
+				<p id="p_article">This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post.</p>
+			</div>
+
+			<div id="home_article">
+				<h1><a href="../blog/viewpost.php?id=1">Article Title</a></h1>
+				<h4>This is the Description</h4>
+				<p id="p_datetime">Posted on : 1984, May, 22 2:22</p>
+				<p id="p_article">This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post.</p>
+			</div>
+
+			<div id="home_article">
+				<h1><a href="../blog/viewpost.php?id=1">Article Title</a></h1>
+				<h4>This is the Description</h4>
+				<p id="p_datetime">Posted on : 1984, May, 22 2:22</p>
+				<p id="p_article">This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post.</p>
+			</div>
+
+			<div id="home_article">
+				<h1><a href="../blog/viewpost.php?id=1">Article Title</a></h1>
+				<h4>This is the Description</h4>
+				<p id="p_datetime">Posted on : 1984, May, 22 2:22</p>
+				<p id="p_article">This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post. This will contain information about a current project or some type of distribution. The full view may contain a creenshot or image. Possibly a lot more text, if needed.This is the shorthand of the post.</p>
+			</div>
+
+		</div>
+
+		<div class="application" id="content" style="height:1000px; width:100%; background-color:#282828;border-top: 1px solid #00CC00;">
+
+		</div>
+
+
+		<div id="footer" style="width:100%; height:25px; background-color: #383838; border-top: 1px solid #00CC00; color: #FFFFFF;	float: right;">
+
+			<span style="float:left;line-height: 2;"><h5>&nbsp; &#169; avatarofvelius conceptual 2005 - 2017 content and creation by mTm</h5></span>
+			</i></center>
+
+			<span style="float:right;line-height: 2;"><h5><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+			Attribution-NonCommercial-NoDerivatives 4.0 International</a></span>
+		<div/>
+
+
+	</div>
+	</body>
+
+
+</html>
